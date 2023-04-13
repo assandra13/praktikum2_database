@@ -1,13 +1,13 @@
 # Praktikum 2 Database
 
 # Script DDL 
-![img](gambar/Screenshot%202023-04-13%20131246.png)
+![img](gambar/27.png)
 
 # Untuk tugas praktikum di atas, langkah langkah beserta screenshoot outputnya dapat di lihat di 
 
 # Script DML
-![img](gambar/Screenshot%202023-04-13%20131311.png)
-![img](gambar/Screenshot%202023-04-13%20131323.png)
+![img](gambar/28.png)
+![img](gambar/29.png)
 
 # Evaluasi Dan Pertanyaan
-![img](gambar/Screenshot%202023-04-13%20131351.png)
+![img](gambar/30.png)
