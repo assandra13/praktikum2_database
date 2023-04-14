@@ -1,7 +1,9 @@
 # Praktikum 2 Database
 
 **Nama    : Assandra Julyant Firdausy**
+
 **NIM     : 312210384**
+
 **Kelas   : TI.22.A.4**
 
 # DDL (Data Definition Language) & DML (Data Manipulation Language)
@@ -20,87 +22,88 @@
      Data definition Language (DDL) adalah bahasa pemrogaraman yang digunakan untuk mengola objek database, seperti tabel, indeks, dan constraint. DDL digunakan untuk membuat, mengubah dan menghapus struktur database, termasuk tabel, kolom, kunci utama, indeks dan tampilan.
 Berikut adalah perintah-perintah DDL yang digunakan untuk membuat sebuah DBMS berdasarkan skema diatas.
 
-- Membuat sebuah database:
-```sql
-CREATE DATABASE nama_database;
-```
+    - Membuat sebuah database:
+    ```sql
+    CREATE DATABASE nama_database;
+    ```
 
-- Menggunakan sebuah database:
-```sql
-USE nama_database;
-```
+    - Menggunakan sebuah database:
+    ```sql
+    USE nama_database;
+    ```
 
-- Membuat sebuah tabel:
-```sql
-CREATE TABLE nama_tabel (field1,...,fieldn) VALUE
-(value1 tipe_data(ukuran),...,
-(valuen tipe_data(ukuran))
-);
-```sql
+    - Membuat sebuah tabel:
+    ```sql
+    CREATE TABLE nama_tabel (field1,...,fieldn) VALUE
+    (value1 tipe_data(ukuran),...,
+    (valuen tipe_data(ukuran))
+    );
+    ```sql
 
-- Menambah Primary KEY:
-```sql
-ALTER TABLE nama_tabel ADD PRIMARY KEY (nama_field)
-```
+    - Menambah PRIMARY KEY:
+            ```sql
+            ALTER TABLE nama_tabel ADD PRIMARY KEY (nama_field)
+            ```
 
-- Menambah CONSTRAINT FOREIGN KEY:
-```sql
-ALTER TABLE nama_tabel ADD CONSTRAINT nama_constraint
-FOREIGN KEY (nama_field) REFERENCES nama_tabel_referensi(nama_field_referensi)
-```
 
-- Menambah AUTO INCREMENT:
-```sql
-ALTER TABLE nama_tabel MODIFY nama_field tipe_data(ukuran) AUTO_INCREMENT;
-```
+    - Menambah CONSTRAINT FOREIGN KEY:
+    ```sql
+    ALTER TABLE nama_tabel ADD CONSTRAINT nama_constraint
+    FOREIGN KEY (nama_field) REFERENCES nama_tabel_referensi(nama_field_referensi)
+    ```
+
+    - Menambah AUTO INCREMENT:
+    ```sql
+    ALTER TABLE nama_tabel MODIFY nama_field tipe_data(ukuran) AUTO_INCREMENT;
+    ```
 
   2. DML Script 
   Data Manipulation Language (DML) adalah bahasa yang digunakan untuk mengakses, memanipulasi, dan mengubah data dalam database. Berikut adalah perintah-perintah DML yang digunakan untuk membuat sebuah DMS berdasarkan skema diatas.
 
-- Menambah data:
-```sql
-INSERT INTO <table_name> (filed1,...,fieldn) VALUE (val1,...,valn);
-```
+    - Menambah data:
+    ```sql
+    INSERT INTO <table_name> (filed1,...,fieldn) VALUE (val1,...,valn);
+    ```
 
-- Mengubah data:
-```sql
-UPDATE <table_name> SET [field1=val1,..,fieldn=valn] WHERE <kondisi>
-```
+    - Mengubah data:
+    ```sql
+    UPDATE <table_name> SET [field1=val1,..,fieldn=valn] WHERE <kondisi>
+    ```
 
-- Menghapus data:
-```sql
-DELETE FROM <table_name> WHERE <kondisi>
-```
+    - Menghapus data:
+    ```sql
+    DELETE FROM <table_name> WHERE <kondisi>
+    ```
 
-- Menampilkan data:
-```sql
-SELECT * FROM <table_name>
-```
+    - Menampilkan data:
+    ```sql
+    SELECT * FROM <table_name>
+    ```
 
-- Menampilkan data sesuai kondisi:
-```sql
-SELECT * FROM <table_name> WHERE <kondisi>
-```
+    - Menampilkan data sesuai kondisi:
+    ```sql
+    SELECT * FROM <table_name> WHERE <kondisi>
+    ```
 
- Selisih tahun
- ```sql
- SELECT * FROM <table_name> WHERE TIMESTAMPDIFF (YEAR, tgl_lahir, CURDATE()) < usia
- ```
+    Selisih tahun
+    ```sql
+    SELECT * FROM <table_name> WHERE TIMESTAMPDIFF (YEAR, tgl_lahir, CURDATE()) < usia
+    ```
 
- Sesuai urutan
- ```sql
- SELECT * FROM <table_name>  WHERE ORDER BY <acuan>
- ```
+    Sesuai urutan
+    ```sql
+    SELECT * FROM <table_name>  WHERE ORDER BY <acuan>
+    ```
 
- Sesuai field/kolom yang di inginkan
- ```sql
- SELECT <field1,...,fieldn> FROM <nama_tabel>;
- ```
+    Sesuai field/kolom yang di inginkan
+    ```sql
+    SELECT <field1,...,fieldn> FROM <nama_tabel>;
+    ```
 
 # B. Evaluasi dan Pertanyaan
 
 • Tulis semua perintah-perintah SQL percobaan di atas beserta outputnya!
-[Script_DDL_DML](#a-script-ddl--dml)   
+untuk perintah SQL ada di **Script DDL * DML**
 
 • Apa bedanya penggunaan BETWEEN dan penggunaan operator >=
 dan <= ?
@@ -121,6 +124,4 @@ Kesimpulannya, operator BETWEEN dan operator >= dan <= secara terpisah dapat dig
 
 • Buat laporan praktikum yang berisi, langkah-langkah praktikum
 beserta screenshot yang sudah dilakukan dalam bentuk dokumen.
-[Laporan_Praktikum2](laporan praktikum 2 basis data.pdf)
-
-
+untuk bukti laporan dan isi screenshoot ada di **(laporan praktikum 2 basis data.pdf)**
